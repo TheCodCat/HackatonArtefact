@@ -10,8 +10,9 @@ public class MoveMotor : MonoBehaviour
 	[SerializeField] private CharacterController _controller;
 	[Header("Гравитация")]
 	[SerializeField] private bool _isGround;
+	[SerializeField] private bool _isJump;
 	[SerializeField] private float _gravity = -9.8f;
-	[SerializeField] private Vector3 _velocity;
+	[SerializeField] private float _speedJump;
 
 	private Vector2 _inputDirection;
 	private Vector3 _moveDirection;
@@ -22,15 +23,27 @@ public class MoveMotor : MonoBehaviour
 		_moveDirection.x = _inputDirection.x;
 		_moveDirection.z = _inputDirection.y;
 	}
+	public void Jump(InputAction.CallbackContext context)
+	{
+		if (context.performed)
+			_isJump = true;
+	}
 	private void Update()
 	{
 		_isGround = _controller.isGrounded;
-		_controller.Move(transform.TransformDirection(_moveDirection) * _speed * Time.deltaTime);
 		if (!_isGround)
 		{
-			_velocity.y += _gravity * Time.deltaTime;
+			_moveDirection.y += _gravity * Time.deltaTime;
 		}
-		else _velocity.y = -1f;
-		_controller.Move(_velocity * Time.deltaTime);
+		else
+		{
+			_moveDirection.y = -1f;
+			if (_isJump)
+			{
+				_isJump = false;
+				_moveDirection.y = _speedJump;
+			}
+		}
+		_controller.Move(transform.TransformDirection(_moveDirection) * _speed * Time.deltaTime);
 	}
 }
