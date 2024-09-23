@@ -2,7 +2,7 @@
     "name": "InputSystem",
     "maps": [
         {
-            "name": "Player",
+            "name": "Game",
             "id": "4c98f8db-8972-4e95-95c3-32b21d5444dc",
             "actions": [
                 {
@@ -108,6 +108,54 @@
                     "processors": "",
                     "groups": "",
                     "action": "Interactable",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Grap",
+            "id": "f4fe23cb-46e2-4fb4-a62b-35cf8ef18866",
+            "actions": [
+                {
+                    "name": "Put",
+                    "type": "Button",
+                    "id": "526013a6-5ffa-4a6d-af8e-b104dff460f9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GrapRotation",
+                    "type": "Value",
+                    "id": "da08ba15-e856-4223-bbe1-1fe4810c080c",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8a1a42bb-5bfa-4e78-9b47-f0ce06a5333b",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Put",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5c83a0fe-0148-47ce-816a-3efd90b9528e",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GrapRotation",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

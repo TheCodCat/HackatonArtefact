@@ -7,7 +7,6 @@ public class InteractableMotor : MonoBehaviour
 {
 	[SerializeField] private float _distance;
 	[SerializeField] private LayerMask _layerMask;
-
 	public void Interactables(InputAction.CallbackContext context)
 	{
 		if (context.performed)

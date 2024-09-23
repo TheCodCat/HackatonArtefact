@@ -22,7 +22,7 @@ public class MoveMotor : MonoBehaviour
 		_moveDirection.x = _inputDirection.x;
 		_moveDirection.z = _inputDirection.y;
 	}
-	private void FixedUpdate()
+	private void Update()
 	{
 		_isGround = _controller.isGrounded;
 		_controller.Move(transform.TransformDirection(_moveDirection) * _speed * Time.deltaTime);
