@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : MonoBehaviour, IInteractable
+public class Door : Interactable
 {
-	public void Interaction()
+	public override void Interaction()
 	{
 		Debug.Log("Я открываюсь");
 	}

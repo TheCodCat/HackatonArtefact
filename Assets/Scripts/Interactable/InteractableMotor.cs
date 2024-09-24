@@ -15,7 +15,7 @@ public class InteractableMotor : MonoBehaviour
 
 			if(Physics.Raycast(ray, out RaycastHit hitInfo, _distance, _layerMask))
 			{
-				if(hitInfo.collider.TryGetComponent(out IInteractable interactable))
+				if(hitInfo.collider.TryGetComponent(out Interactable interactable))
 				{
 					interactable.Interaction();
 				}

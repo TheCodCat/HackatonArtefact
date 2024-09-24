@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EmtyTorch : MonoBehaviour,IInteractable
+public class EmtyTorch : Interactable
 {
     float time = 0;
     [SerializeField] private ParticleSystem _particleSystem;
@@ -10,7 +10,7 @@ public class EmtyTorch : MonoBehaviour,IInteractable
     [SerializeField] private bool _isPlay;
     [SerializeField] private AnimationCurve _animationFire;
 
-    public void Interaction()
+    public override void Interaction()
     {
         _isPlay = !_isPlay;
         if (_isPlay)
