@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2863213469040262151}
   - component: {fileID: 1639930219112858815}
   m_Layer: 6
-  m_Name: Rough
+  m_Name: RoughWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 3426013133558181299}
+  _interactable: {fileID: 0}
 --- !u!65 &1639930219112858815
 BoxCollider:
   m_ObjectHideFlags: 0
