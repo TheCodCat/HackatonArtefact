@@ -180,6 +180,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "TimeLine",
+            "id": "2d75acff-ab4e-427e-af5e-da49045e6a17",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "efc878c7-f7b8-431e-84ac-03aa2be9af50",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ca5044a7-cc37-40f5-b234-123d61c426c4",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

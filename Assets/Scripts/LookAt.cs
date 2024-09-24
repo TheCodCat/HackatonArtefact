@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class LookAt : MonoBehaviour
 {
-	[SerializeField] private Camera _camera;
+	[SerializeField] private CinemachineVirtualCamera _camera;
 	[SerializeField] private float _sensitivity;
 	[SerializeField, Range(0,-90)] private float _minY;
 	[SerializeField, Range(0, 90)] private float _maxY;
