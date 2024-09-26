@@ -8,4 +8,6 @@ public class Door : MonoBehaviour, IInteractable
 	{
 		Debug.Log("Я открываюсь");
 	}
+
+	public void Interaction(Artefact artefact) { }
 }

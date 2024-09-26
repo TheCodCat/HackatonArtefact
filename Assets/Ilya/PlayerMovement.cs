@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
 
     private float rotationX = 0f; // Угол поворота по оси X (вверх/вниз)
     private Camera playerCamera; // Ссылка на камеру игрока
+    [SerializeField] private float _rayDistance;
+
+    [SerializeField] private Stack<Artefact> artefacts = new Stack<Artefact>();
 
     private void Start()
     {
@@ -23,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         MovePlayer();
         RotatePlayer();
+        PickupHandler();
     }
 
     private void MovePlayer()
@@ -46,7 +50,32 @@ public class PlayerMovement : MonoBehaviour
         playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0f, 0f); // Поворачиваем камеру
         transform.Rotate(Vector3.up * mouseX); // Поворачиваем игрока по оси Y
     }
+
+    private void PickupHandler()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Ray ray = new Ray(playerCamera.transform.position,playerCamera.transform.forward);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, _rayDistance))
+            {
+                Debug.Log(hit.collider);
+                if (hit.collider.TryGetComponent(out Artefact pickUp))
+                {
+                    artefacts.Push(pickUp);
+                    pickUp.Up();
+                }
+
+                if (hit.collider.TryGetComponent(out AltarPoint altar))
+                {
+                    altar.Interaction(artefacts.Pop());
+                }
+            }
+        }
+    }
 }
+// Queu => 123456 => 123456
+// Stack => 123456 => 654321
 
 
 
