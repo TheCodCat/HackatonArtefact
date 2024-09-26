@@ -11,8 +11,7 @@ public class Rough : Interactable
     {
         _animator.SetTrigger(INTERACT);
     }
-
-    public void Activate()
+    public virtual void Activate()
     {
         _interactable.Interaction();
     }

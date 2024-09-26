@@ -13,7 +13,11 @@ public class LookAt : MonoBehaviour
 	private float _xRotate;
 	private float _yRotate;
 
-	public void Look(InputAction.CallbackContext context)
+    private void Start()
+    {
+		Cursor.lockState = CursorLockMode.Locked;
+    }
+    public void Look(InputAction.CallbackContext context)
 	{
 		_xRotate += context.ReadValue<Vector2>().x * _sensitivity;
 		_yRotate -= context.ReadValue<Vector2>().y * _sensitivity;

@@ -7,7 +7,7 @@ public class Altar : MonoBehaviour
 {
     public static UnityAction OnActive;
     [SerializeField] private GameObject _obj;
-    [SerializeField] private EmtyTorch[] _emtyTorchs;
+    [SerializeField] private Torch[] _emtyTorchs;
 
     private void OnEnable()
     {
