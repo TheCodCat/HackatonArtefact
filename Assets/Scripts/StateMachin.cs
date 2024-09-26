@@ -7,8 +7,8 @@ public class StateMachin : MonoBehaviour
 {
 	[SerializeField] private PlayerInput _playerInput;
 
-	public void ChangeState(string state)
+	public void ChangeState(StatePlayer state)
 	{
-		_playerInput.SwitchCurrentActionMap(state);
+		_playerInput.SwitchCurrentActionMap(state.ToString());
 	}
 }
