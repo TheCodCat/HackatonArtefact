@@ -2512,6 +2512,11 @@ PrefabInstance:
       propertyPath: _interactabls.Array.data[1]
       value: 
       objectReference: {fileID: 1624215458}
+    - target: {fileID: 3200923440987206239, guid: 66a056376fe711242ab56c45f55cc478,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4807657134467124850, guid: 66a056376fe711242ab56c45f55cc478,
         type: 3}
       propertyPath: m_Size.x
