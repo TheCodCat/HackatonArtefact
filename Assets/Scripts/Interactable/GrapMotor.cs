@@ -8,7 +8,7 @@ public class GrapMotor : MonoBehaviour
 	[SerializeField] private float _distance;
 	[SerializeField] private LayerMask _layerMask;
 	[SerializeField] private StateMachin _stateMachin;
-	[SerializeField] private PickUp _currentUp;
+	[SerializeField] private Artefact _currentUp;
 
 	private float _xRotate;
 	private float _yRotate;
@@ -21,10 +21,18 @@ public class GrapMotor : MonoBehaviour
 
 			if (Physics.Raycast(ray, out RaycastHit hitInfo, _distance, _layerMask))
 			{
-				if (hitInfo.collider.TryGetComponent(out PickUp grap) && _currentUp is null)
+				if (hitInfo.collider.TryGetComponent(out Artefact grap) && _currentUp is null)
 				{
 					grap.Up();
 					_currentUp = grap;
+				}
+				else if (hitInfo.collider.TryGetComponent(out AltarPoint point))
+				{
+					if(_currentUp is not null)
+					{
+						point.Interaction(_currentUp);
+						_currentUp = null;
+					}
 				}
 			}
 		}

@@ -17,5 +17,6 @@ public class AltarPoint : Interactable
 
 	public override void Interaction()
 	{
+
 	}
 }
