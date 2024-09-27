@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8ca2a66-8ccf-4ebc-9bd3-ce0c71939f68" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HackatonArtefact/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HackatonArtefact/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/dange/FullScene.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/dange/FullScene.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/dange/FullScene.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/dange/FullScene.blend1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Wall images/bear_image.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Wall images/bear_image.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Wall images/filin_image.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Wall images/filin_image.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
       <workItem from="1727187085560" duration="7937000" />
       <workItem from="1727269509734" duration="7276000" />
       <workItem from="1727294232636" duration="126000" />
-      <workItem from="1727444102382" duration="828000" />
+      <workItem from="1727444102382" duration="2873000" />
     </task>
     <servers />
   </component>
