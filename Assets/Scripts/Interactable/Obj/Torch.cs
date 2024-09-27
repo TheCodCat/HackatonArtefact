@@ -38,4 +38,8 @@ public abstract class Torch : Interactable
             yield return null;
         }
     }
+	private void OnDisable()
+	{
+        StopCoroutine(LightNoise());
+	}
 }

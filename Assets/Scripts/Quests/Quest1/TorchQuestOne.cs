@@ -7,10 +7,6 @@ public class TorchQuestOne : Torch
     [SerializeField] private int _index;
     [SerializeField] private QuestOne _questOne;
     public int Index => _index;
-	private void Start()
-	{
-		Interaction();
-	}
 	public override void Interaction()
     {
         if (!IsPlay)
