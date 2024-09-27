@@ -18,6 +18,6 @@ public class StateMachin : MonoBehaviour
 	}
 	public string GetGameMode()
 	{
-		return _playerInput.currentActionMap.ToString();
+		return _playerInput.currentActionMap.name;
 	}
 }

@@ -6,9 +6,11 @@ public class QuestOne : MonoBehaviour
 {
     [SerializeField] private int[] _password;
     [SerializeField] private List<TorchQuestOne> _torchPassList;
-    public void GetTorch(TorchQuestOne torchQuestOne)
+    [SerializeField] private Interactable[] _interactabls;
+	public void GetTorch(TorchQuestOne torchQuestOne)
     {
         _torchPassList.Add(torchQuestOne);
+        Debug.Log(_torchPassList.Count);
         if(_torchPassList.Count != _password.Length) return;
 
         for (int i = 0; i < _torchPassList.Count; i++)
@@ -23,7 +25,11 @@ public class QuestOne : MonoBehaviour
                 return;
             }
         }
-        Debug.Log("Пароль верный");
+        if (_interactabls.Length == 0) return;
 
-    }
+        foreach (var item in _interactabls)
+        {
+            item.Interaction();
+        }
+	}
 }
