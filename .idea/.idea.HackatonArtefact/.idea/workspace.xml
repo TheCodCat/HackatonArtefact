@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8ca2a66-8ccf-4ebc-9bd3-ce0c71939f68" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/BlueFire.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/BlueFire.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Green_light.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Green_light.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/RedFire.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/RedFire.mat" afterDir="false" />
-    </list>
+    <list default="true" id="b8ca2a66-8ccf-4ebc-9bd3-ce0c71939f68" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +85,7 @@
       <workItem from="1727187085560" duration="7937000" />
       <workItem from="1727269509734" duration="7276000" />
       <workItem from="1727294232636" duration="126000" />
-      <workItem from="1727444102382" duration="1422000" />
+      <workItem from="1727444102382" duration="2033000" />
     </task>
     <servers />
   </component>
