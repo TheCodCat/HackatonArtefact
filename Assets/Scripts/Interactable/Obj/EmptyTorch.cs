@@ -7,6 +7,5 @@ public class EmptyTorch : Torch
     public override void Interaction()
     {
         base.Interaction();
-        Altar.OnActive?.Invoke();
     }
 }

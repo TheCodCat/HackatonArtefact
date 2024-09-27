@@ -27,13 +27,13 @@ public class GrapMotor : MonoBehaviour
 				{
 					if (_currentGrap == null)
 					{
-						_stateMachin.ChangeState("Grap");
+						_stateMachin.ChangeState(StatePlayer.Grap);
 						grap.PickUp(_point);
 						_currentGrap = grap;
 					}
 					else
 					{
-						_stateMachin.ChangeState("Game");
+						_stateMachin.ChangeState(StatePlayer.Game);
 						grap.Put();
 						_currentGrap = null;
 					}
