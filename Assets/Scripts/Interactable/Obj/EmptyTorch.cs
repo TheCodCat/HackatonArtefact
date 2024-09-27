@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class EmptyTorch : Torch
 {
-    public override void Interaction()
+	[SerializeField] private bool _isStart;
+	private void Start()
+	{
+		if (_isStart) Interaction();
+	}
+	public override void Interaction()
     {
         base.Interaction();
     }
