@@ -30,8 +30,8 @@ public class GrapMotor : MonoBehaviour
 				{
 					if(_currentUp is not null)
 					{
-						point.Interaction(_currentUp);
-						_currentUp = null;
+						bool _iss = point.Interaction(_currentUp,_currentUp.ID);
+						if(_iss) _currentUp = null;
 					}
 				}
 			}

@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Artefact : PickUp
 {
+    [SerializeField] private int _id;
     [SerializeField] private MeshRenderer _renderer;
     [SerializeField] private Rigidbody _rb;
+    public int ID => _id;
     public override void Up()
     {
         base.Up();

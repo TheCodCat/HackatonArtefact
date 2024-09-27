@@ -6,15 +6,20 @@ using UnityEngine;
 public class AltarPoint : Interactable
 {
 	[SerializeField] private Altar _altar;
-    [SerializeField] private Artefact _artefact;
     [SerializeField] private Transform _DownPoint;
+	[SerializeField] private int _artefactID;
+    private Artefact _artefact;
 
-	public void Interaction(Artefact myArt)
+	public bool Interaction(Artefact myArt, int id)
 	{
+		Debug.Log($"{id} {_artefactID}");
+		if (id != _artefactID) return false;
+
 		_artefact = myArt;
 		_artefact.transform.position = _DownPoint.position;
 		_artefact.ActiveAltar();
 		_altar.AddArtefact();
+		return true;
 	}
 
 	public override void Interaction()
