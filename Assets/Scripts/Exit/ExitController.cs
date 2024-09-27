@@ -8,6 +8,7 @@ public class ExitController : MonoBehaviour
 {
     [SerializeField] private GameObject _exitPanel;
     [SerializeField] private GameObject _button;
+    [SerializeField] private Altar _altar;
     public GameObject ExitButton => _button;
     public GameObject ExitPanel => _exitPanel;
     public void EnableExitPanel()
@@ -15,13 +16,14 @@ public class ExitController : MonoBehaviour
         ExitPanel.SetActive(true);
     }
 
-    public void Exit(string name)
+    public void Exit()
     {
+        string nameScene = _altar.GetVariableEnd();
         StartCoroutine(Loader());
 
         IEnumerator Loader()
         {
-            SceneManager.LoadSceneAsync(name);
+            SceneManager.LoadSceneAsync(nameScene);
             yield return null;
         }
     }

@@ -5,24 +5,20 @@ using UnityEngine.Events;
 
 public class Altar : MonoBehaviour
 {
-    public static UnityAction OnActive;
-    [SerializeField] private GameObject _obj;
-    [SerializeField] private Torch[] _emtyTorchs;
-
-    private void OnEnable()
-    {
-        OnActive += ActiveAltar;
-    }
-    private void OnDisable()
-    {
-        OnActive -= ActiveAltar;
-    }
-    private void ActiveAltar()
-    {
-        foreach (var item in _emtyTorchs)
-        {
-            if (!item.IsPlay) return;
-        }
-        _obj.SetActive(true);
-    }
+	[SerializeField] private int _countArtefact;
+	[SerializeField] private int _max;
+	[Header("Названия сцен")]
+	[SerializeField] private string _lose;
+	[SerializeField] private string _win;
+	public int CountArtafact => _countArtefact;
+	public int Max => _max;
+	public void AddArtefact()
+	{
+		_countArtefact++;
+	}
+	public string GetVariableEnd()
+	{
+		if (_countArtefact == _max) return _win;
+		else return _lose;
+	}
 }

@@ -8,7 +8,8 @@ public class LightTrigger : MonoBehaviour
 	[SerializeField] private EmptyTorch[] _emptyTorches;
 	private async void OnTriggerEnter(Collider other)
 	{
-		if(other.TryGetComponent(out CharacterController component))
+		if (StateMachin.Instance.GetGameMode().ToLower() != StatePlayer.Game.ToString().ToLower()) return;
+		if (other.TryGetComponent(out CharacterController component))
 		{
 			if (_emptyTorches.Length == 0) return;
             foreach (var item in _emptyTorches)
@@ -21,6 +22,7 @@ public class LightTrigger : MonoBehaviour
 	}
 	private async void OnTriggerExit(Collider other)
 	{
+		if (StateMachin.Instance.GetGameMode().ToLower() != StatePlayer.Game.ToString().ToLower()) return;
 		if (other.TryGetComponent(out CharacterController component))
 		{
 			if (_emptyTorches.Length == 0) return;
