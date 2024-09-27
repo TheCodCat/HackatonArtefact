@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8ca2a66-8ccf-4ebc-9bd3-ce0c71939f68" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Ilya/Lever.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ilya/Lever.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ilya/Lever2.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ilya/Lever2.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ilya/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ilya/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ilya/PuzleManag2.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ilya/PuzleManag2.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ilya/PuzleManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ilya/PuzleManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ilya/ResetLEver.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ilya/ResetLEver.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HackatonArtefact/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HackatonArtefact/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dange/FullScene.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/dange/FullScene.blend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dange/FullScene.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/dange/FullScene.blend1" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +18,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Ilya/HandTourch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.10/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -39,18 +28,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Ilya&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.22f1\Editor\Unity.exe" />
@@ -100,6 +89,7 @@
       <workItem from="1727187085560" duration="7937000" />
       <workItem from="1727269509734" duration="7276000" />
       <workItem from="1727294232636" duration="126000" />
+      <workItem from="1727444102382" duration="828000" />
     </task>
     <servers />
   </component>
