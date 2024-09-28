@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8ca2a66-8ccf-4ebc-9bd3-ce0c71939f68" name="Changes" comment="" />
+    <list default="true" id="b8ca2a66-8ccf-4ebc-9bd3-ce0c71939f68" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HackatonArtefact/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HackatonArtefact/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +16,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Downloads/Puzzle - 2/Lever_2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/Puzzle - 2/PuzzleManager2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/Puzzle - 2/Tourch.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Quests/ilya`s quests/TorchQ2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.7.0/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.10/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -86,6 +93,8 @@
       <workItem from="1727269509734" duration="7276000" />
       <workItem from="1727294232636" duration="126000" />
       <workItem from="1727444102382" duration="2873000" />
+      <workItem from="1727543697839" duration="52000" />
+      <workItem from="1727544868579" duration="1584000" />
     </task>
     <servers />
   </component>
