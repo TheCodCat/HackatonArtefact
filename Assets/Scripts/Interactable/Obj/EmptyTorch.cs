@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EmptyTorch : Torch
 {
-	[SerializeField] private bool _isStart;
+	[SerializeField] protected bool _isStart;
 	private void Start()
 	{
 		if (_isStart) Interaction();
