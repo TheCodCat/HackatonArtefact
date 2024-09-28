@@ -29,7 +29,7 @@ public class QuestOne : MonoBehaviour
 
         foreach (var item in _interactabls)
         {
-            item.Interaction();
+            item.gameObject.SetActive(false);
         }
 	}
 }

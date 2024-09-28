@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : Interactable
+public class LightDoor : Interactable
 {
 	[SerializeField] private bool _isOpen;
 	[SerializeField] private GameObject _door;
@@ -14,22 +14,22 @@ public class Door : Interactable
 		if (_isOpen) return;
 
 		_gradients.Add(doorTorch);
-		if(_gradients.Count != 2) return;
+		if (_gradients.Count != 2) return;
 
-        for (int i = 0; i < _gradients.Count; i++)
-        {
-			if (_gradients[i].Getcolor() == _gradient) _countFire++;
-        }
-
-		if(_countFire != _gradients.Count)
+		for (int i = 0; i < _gradients.Count; i++)
 		{
-            foreach (var item in _gradients)
-            {
+			if (_gradients[i].Getcolor() == _gradient) _countFire++;
+		}
+
+		if (_countFire != _gradients.Count)
+		{
+			foreach (var item in _gradients)
+			{
 				item.DisableLight();
-            }
-        }
+			}
+		}
 		else _door.SetActive(false);
-        _gradients.Clear();
+		_gradients.Clear();
 
 	}
 
@@ -38,6 +38,7 @@ public class Door : Interactable
 		throw new System.NotImplementedException();
 	}
 }
-public enum ColorDoor{
+public enum ColorDoor
+{
 	Red, Yellow, Blue
 }

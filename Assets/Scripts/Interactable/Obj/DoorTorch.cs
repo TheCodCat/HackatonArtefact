@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoorTorch : Torch
 {
 	[SerializeField] bool _isFire;
-	[SerializeField] private Door _door;
+	[SerializeField] private LightDoor _door;
 	[SerializeField] private ColorDoor _doorColor;
 	public void Interaction(Gradient gradient, ColorDoor colorDoor)
 	{
