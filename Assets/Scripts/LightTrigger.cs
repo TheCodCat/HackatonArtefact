@@ -8,7 +8,7 @@ public class LightTrigger : MonoBehaviour
 	[SerializeField] private EmptyTorch[] _emptyTorches;
 	private async void OnTriggerEnter(Collider other)
 	{
-		Debug.Log(StateMachin.Instance.GetGameMode());
+		Debug.Log($"{StateMachin.Instance.GetGameMode()} {gameObject}");
 		if (StateMachin.Instance.GetGameMode().ToLower() != StatePlayer.Game.ToString().ToLower()) return;
 
 		if (other.TryGetComponent(out CharacterController component))

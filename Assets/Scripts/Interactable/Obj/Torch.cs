@@ -10,11 +10,15 @@ public abstract class Torch : Interactable
     [SerializeField] private float _intensivityLight;
     [SerializeField] protected Light _light;
     [SerializeField] private AnimationCurve _animationFire;
+    [SerializeField] private AudioClip[] _audioClips;
+    [SerializeField] private AudioSource _audioSource;
     public bool IsPlay => _isPlay;
 
     public override void Interaction()
     {
         _isPlay = !_isPlay;
+		_audioSource.clip = _audioClips[Random.Range(0,_audioClips.Length)];
+        _audioSource.pitch = Random.Range(0.95f,1); ;
         if (_isPlay)
         {
             _particleSystem.Play();
@@ -25,6 +29,7 @@ public abstract class Torch : Interactable
             _particleSystem.Stop();
         }
         _light.gameObject.SetActive(_isPlay);
+        _audioSource.Play();
     }
 
     IEnumerator LightNoise()

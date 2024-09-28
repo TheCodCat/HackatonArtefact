@@ -13,6 +13,9 @@ public class MoveMotor : MonoBehaviour
 	[SerializeField] private bool _isJump;
 	[SerializeField] private float _gravity = -9.8f;
 	[SerializeField] private float _speedJump;
+	[Header("иръш")]
+	[SerializeField] private bool _isMove;
+	[SerializeField] private AudioSource _audioSource;
 
 	private Vector2 _inputDirection;
 	private Vector3 _moveDirection;
@@ -22,6 +25,10 @@ public class MoveMotor : MonoBehaviour
 		_inputDirection = context.ReadValue<Vector2>();
 		_moveDirection.x = _inputDirection.x;
 		_moveDirection.z = _inputDirection.y;
+		_isMove = _inputDirection != Vector2.zero ? true : false;
+
+		if(_isMove) _audioSource.Play();
+		else _audioSource.Stop();
 	}
 	public void Jump(InputAction.CallbackContext context)
 	{
