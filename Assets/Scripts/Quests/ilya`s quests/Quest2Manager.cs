@@ -2,27 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Quest2Manager : MonoBehaviour
+public class Quest2Manager : Interactable
 {
-    public Torch[] torches; 
-    public GameObject door1;
-    public GameObject door2;
+	[SerializeField] private List<RouchToTorch> _rouchToTorches;
+	[SerializeField] private TorchQ2[] _torchs;
+    [SerializeField] private Door[] _dors; 
+	public override void Interaction()
+	{
+	}
+	public void Interaction(int index)
+	{
+		_rouchToTorches[index].ActiveRouch();
 
-    private void Update()
-    {
-        CheckTorches();
-    }
-
-    private void CheckTorches()
-    {
-        foreach (Torch torch in torches)
+        foreach (var item in _torchs)
         {
-            if (!torch.IsPlay)
-            {
-                return; 
-            }
+            if(!item.GetIsPlay()) return;
         }
-        door1.SetActive(false);
-        door2.SetActive(false);
+        foreach (var item in _dors)
+        {
+            item.gameObject.SetActive(false);
+        }
+    }
+}
+
+[System.Serializable]
+public class RouchToTorch
+{
+	public List<Torch> Torch;
+
+	public void ActiveRouch()
+	{
+        foreach (var item in Torch)
+        {
+			item.Interaction();
+        }
+
     }
 }
