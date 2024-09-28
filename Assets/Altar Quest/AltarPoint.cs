@@ -17,6 +17,8 @@ public class AltarPoint : Interactable
 
 		_artefact = myArt;
 		_artefact.transform.position = _DownPoint.position;
+		_artefact.transform.SetParent(_DownPoint);
+		_artefact.transform.forward = _DownPoint.forward;
 		_artefact.ActiveAltar();
 		_altar.AddArtefact();
 		return true;
