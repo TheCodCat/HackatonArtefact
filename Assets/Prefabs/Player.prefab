@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6223017793551529821}
   - component: {fileID: 6500624006978179732}
   - component: {fileID: 30465554880137997}
+  - component: {fileID: 5936549894317619787}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 2149521286337711236}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.8, z: 0}
+  m_LocalPosition: {x: 0, y: 1.8000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -173,7 +174,7 @@ MonoBehaviour:
   _distance: 3
   _layerMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 1152
   _stateMachin: {fileID: 5199414060862324913}
   _currentUp: {fileID: 0}
 --- !u!114 &30465554880137997
@@ -210,6 +211,23 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5936549894317619787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2149521286337711236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e4f3b1230b9b044da8ea5a8058343b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _distance: 2
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 512
+  _altarTorch: {fileID: 0}
 --- !u!1 &2195229587504518438
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +622,18 @@ MonoBehaviour:
       - m_Target: {fileID: 6500624006978179732}
         m_TargetAssemblyTypeName: GrapMotor, Assembly-CSharp
         m_MethodName: Grap
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5936549894317619787}
+        m_TargetAssemblyTypeName: LightFireMotor, Assembly-CSharp
+        m_MethodName: Interactables
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
