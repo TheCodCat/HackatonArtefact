@@ -460,6 +460,21 @@ PrefabInstance:
       objectReference: {fileID: 1759994967}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.199
       objectReference: {fileID: 0}
@@ -1389,6 +1404,12 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -125435165217083709, guid: dacf60e680a146b4498f8a6d23d46d0b, type: 3}
+--- !u!23 &453488212 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4578748994282637039, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1895941618}
+  m_PrefabAsset: {fileID: 0}
 --- !u!82 &504498610 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 9099168991006694260, guid: 3b369cebba9cd4849aca07a4c47ff7c1,
@@ -2646,6 +2667,21 @@ PrefabInstance:
       propertyPath: _renderer
       value: 
       objectReference: {fileID: 1746725683}
+    - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5544,35 +5580,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 899550359329534315, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
+        type: 3}
+      propertyPath: _renderer
+      value: 
+      objectReference: {fileID: 453488212}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 100
+      value: 100.00002
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 100
+      value: 100.00003
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 100
+      value: 100.00003
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.256
+      value: 2.2559986
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.277
+      value: -1.2769982
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -71.964
+      value: -71.964005
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
@@ -21924,7 +21965,6 @@ SceneRoots:
   - {fileID: 242634259}
   - {fileID: 706639185}
   - {fileID: 505070344}
-  - {fileID: 1895941618}
   - {fileID: 309727424}
   - {fileID: 739285786}
   - {fileID: 951733948}
@@ -21939,4 +21979,5 @@ SceneRoots:
   - {fileID: 1002004049}
   - {fileID: 790334085}
   - {fileID: 944253703}
+  - {fileID: 1895941618}
   - {fileID: 186165763}
