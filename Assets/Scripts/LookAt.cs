@@ -16,6 +16,9 @@ public class LookAt : MonoBehaviour
     private void Start()
     {
 		Cursor.lockState = CursorLockMode.Locked;
+
+		_xRotate = transform.rotation.y;
+		_yRotate = _camera.transform.rotation.x;
     }
     public void Look(InputAction.CallbackContext context)
 	{

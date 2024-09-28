@@ -27,7 +27,7 @@ public class MoveMotor : MonoBehaviour
 		_moveDirection.z = _inputDirection.y;
 		_isMove = _inputDirection != Vector2.zero ? true : false;
 
-		if(_isMove) _audioSource.Play();
+		if(_isMove && _isGround) _audioSource.Play();
 		else _audioSource.Stop();
 	}
 	public void Jump(InputAction.CallbackContext context)
