@@ -7,6 +7,10 @@ public class TimeLine : MonoBehaviour
 {
     [SerializeField] private string _nameScene;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
     public void loadScene()
     {
         StartCoroutine(Loader());
