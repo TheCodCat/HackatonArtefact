@@ -18,4 +18,9 @@ public class ExitTrigger : MonoBehaviour
             _exitController.EnableExitPanel();
         }
     }
+    public void ToStay()
+    {
+        _exitController.DisableExitPanel();
+        _stateMachin.ChangeState(StatePlayer.Game);
+    }
 }

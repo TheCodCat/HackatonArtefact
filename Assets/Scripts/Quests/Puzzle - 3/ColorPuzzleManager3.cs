@@ -4,24 +4,17 @@ using UnityEngine;
 
 public class ColorPuzzleManager3 : MonoBehaviour
 {
-    public ColorColumn[] columns; 
-    public GameObject door; 
+    [SerializeField] private ColorColumn[] _colorColumns;
+    [SerializeField] private GameObject _kupol;
 
-    private void Update()
+    public void GetFire()
     {
-        CheckColumns();
-    }
-
-    private void CheckColumns()
-    {
-        foreach (ColorColumn column in columns)
+        foreach (var item in _colorColumns)
         {
-            if (!column.IsCorrectColor())
-            {
-                return; // Если хотя бы один столбик неправильно покрашен, выходим
-            }
+            if (!item.IsActive) return;
+
+            _kupol.SetActive(false);
         }
-        door.SetActive(false);
     }
 }
 

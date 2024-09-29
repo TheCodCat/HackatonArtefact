@@ -1,22 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class DoorTorch : Torch
+public class ColorTorch : Torch
 {
+	[SerializeField] private UnityEvent _colorChangedEvent;
 	[SerializeField] bool _isFire;
-	[SerializeField] private LightDoor _door;
 	[SerializeField] private ColorDoor _doorColor;
-	public void Interaction(Gradient gradient, ColorDoor colorDoor)
+	public bool Interaction(Gradient gradient, ColorDoor colorDoor)
 	{
-		if(_isFire) return;
+		if(_isFire || colorDoor != _doorColor) return false;
 
 		_isFire = true;
 		base.Interaction();
 		_doorColor = colorDoor;
 		var color = _particleSystem.colorOverLifetime;
 		color.color = gradient;
-		_door.Interaction(this);
+		_colorChangedEvent?.Invoke();
+		return true;
 	}
 	public void DisableLight()
 	{

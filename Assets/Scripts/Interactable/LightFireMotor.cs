@@ -25,12 +25,18 @@ public class LightFireMotor : MonoBehaviour
 				{
 					_altarTorch = interactable;
 				}
-				if (hitInfo.collider.TryGetComponent(out DoorTorch torch) && _altarTorch is not null)
+				else if (hitInfo.collider.TryGetComponent(out DoorTorch torch) && _altarTorch is not null)
 				{
 					torch.Interaction(_altarTorch.Getcolor(), _altarTorch.ColorDoor);
 					_altarTorch = null;
 				}
-			}
+                else if (hitInfo.collider.TryGetComponent(out ColorTorch Colortorch) && _altarTorch is not null)
+                {
+                    bool isActive = Colortorch.Interaction(_altarTorch.Getcolor(), _altarTorch.ColorDoor);
+					if(isActive)
+						_altarTorch = null;
+                }
+            }
 		}
 	}
 	public Gradient GetGradient()

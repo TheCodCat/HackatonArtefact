@@ -15,6 +15,10 @@ public class ExitController : MonoBehaviour
     {
         ExitPanel.SetActive(true);
     }
+    public void DisableExitPanel()
+    {
+        ExitPanel.SetActive(false);
+    }
 
     public void Exit()
     {

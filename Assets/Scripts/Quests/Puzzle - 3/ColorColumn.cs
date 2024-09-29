@@ -1,28 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ColorColumn : MonoBehaviour
 {
-    public Color correctColor; 
-    private Color currentColor; 
-    private Renderer columnRenderer;
-
-    private void Start()
+    [SerializeField] private UnityEvent OnActive;
+    [SerializeField] private ColorTorch[] _colorTorches;
+    public bool IsActive { get; private set; }
+    public void GetColor()
     {
-        columnRenderer = GetComponent<Renderer>();
-        currentColor = columnRenderer.material.color; // Получаем начальный цвет
-    }
-
-    public void Paint(Color color)
-    {
-        currentColor = color;
-        columnRenderer.material.color = currentColor; // Меняем цвет столбика
-    }
-
-    public bool IsCorrectColor()
-    {
-        return currentColor == correctColor; // Проверяем правильность цвета
+        foreach (var item in _colorTorches)
+        {
+            if (!item.IsPlay) return;
+        }
+        IsActive = true;
+        OnActive?.Invoke();
     }
 }
 
