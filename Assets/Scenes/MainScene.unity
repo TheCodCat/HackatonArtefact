@@ -1910,6 +1910,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7805467724031012515, guid: 3b369cebba9cd4849aca07a4c47ff7c1,
+        type: 3}
+      propertyPath: _audioClips.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805467724031012515, guid: 3b369cebba9cd4849aca07a4c47ff7c1,
+        type: 3}
+      propertyPath: _audioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 473d5d69a7d628f4dae94dd718b38b81, type: 3}
+    - target: {fileID: 7805467724031012515, guid: 3b369cebba9cd4849aca07a4c47ff7c1,
+        type: 3}
+      propertyPath: _audioClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 473d5d69a7d628f4dae94dd718b38b81, type: 3}
     - target: {fileID: 9099168991006694260, guid: 3b369cebba9cd4849aca07a4c47ff7c1,
         type: 3}
       propertyPath: MaxDistance
@@ -3849,7 +3864,7 @@ PrefabInstance:
     - target: {fileID: 3045721889467252095, guid: a53a615b98c5a6c46afef6c5d64df6f9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3045721889467252095, guid: a53a615b98c5a6c46afef6c5d64df6f9,
         type: 3}
@@ -3859,7 +3874,7 @@ PrefabInstance:
     - target: {fileID: 3045721889467252095, guid: a53a615b98c5a6c46afef6c5d64df6f9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.09
+      value: -1.009
       objectReference: {fileID: 0}
     - target: {fileID: 3045721889467252095, guid: a53a615b98c5a6c46afef6c5d64df6f9,
         type: 3}
@@ -11253,7 +11268,7 @@ Animator:
   m_GameObject: {fileID: 1296598045}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 23391faa82afcc44aad543acfe39f0f1, type: 2}
+  m_Controller: {fileID: 9100000, guid: cf44480579f08b44289cd4501352e9b9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12161,7 +12176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _countArtefact: 0
-  _max: 5
+  _max: 0
   _lose: LoseFinalCutScene
   _win: WinFinalCutScene
 --- !u!1001 &1456103200
