@@ -2116,17 +2116,17 @@ PrefabInstance:
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.109
+      value: 25.243
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.86600006
+      value: -1.616
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.709
+      value: 25.312
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
@@ -2652,7 +2652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _altar: {fileID: 1443829392}
   _DownPoint: {fileID: 1309329810}
-  _artefactID: 3
+  _artefactID: 4
 --- !u!65 &256870913
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2824,7 +2824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _altar: {fileID: 1443829392}
   _DownPoint: {fileID: 1789599286}
-  _artefactID: 1
+  _artefactID: 5
 --- !u!65 &266999413
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3452,17 +3452,17 @@ PrefabInstance:
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.393609
+      value: 37.157
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.86600006
+      value: 0.897
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.4905305
+      value: -0.005
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
@@ -4850,7 +4850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _altar: {fileID: 1443829392}
   _DownPoint: {fileID: 283951876}
-  _artefactID: 5
+  _artefactID: 1
 --- !u!65 &578650625
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7117,37 +7117,37 @@ PrefabInstance:
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.259
+      value: 44.108
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.86600006
+      value: -0.597
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.402
+      value: 32.742
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.689611
+      value: 0.6532815
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.68936926
+      value: -0.6532815
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.15682897
+      value: -0.27059805
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.15688027
+      value: -0.27059805
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
@@ -7162,7 +7162,7 @@ PrefabInstance:
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -25.632
+      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 1692776129342526625, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
@@ -8051,17 +8051,17 @@ PrefabInstance:
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.93
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.86600006
+      value: -1.393
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.01
+      value: -72.008
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
@@ -8162,7 +8162,7 @@ PrefabInstance:
     - target: {fileID: 8342415792812304274, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_Name
-      value: Artefact_rabbit
+      value: Artefact_fox
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -15164,42 +15164,42 @@ PrefabInstance:
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.336
+      value: 46.412
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8660121
+      value: 17.05
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.553
+      value: -46.325
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.4955339
+      value: -0.0911166
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.49540386
+      value: 0.091300845
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5045564
+      value: 0.70118934
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.5044244
+      value: 0.7012101
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
@@ -15209,7 +15209,7 @@ PrefabInstance:
     - target: {fileID: 907531148036280114, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.833
+      value: 194.807
       objectReference: {fileID: 0}
     - target: {fileID: 3461218635340210018, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
@@ -15225,7 +15225,7 @@ PrefabInstance:
     - target: {fileID: 8342415792812304274, guid: 4f3ee3e3c0a63ad438674b14d21b3de5,
         type: 3}
       propertyPath: m_Name
-      value: Artefact_fox
+      value: Artefact_rabbit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -15802,7 +15802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _altar: {fileID: 1443829392}
   _DownPoint: {fileID: 106988442}
-  _artefactID: 4
+  _artefactID: 2
 --- !u!65 &1964571054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16229,7 +16229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _altar: {fileID: 1443829392}
   _DownPoint: {fileID: 1978736403}
-  _artefactID: 2
+  _artefactID: 3
 --- !u!65 &2076126914
 BoxCollider:
   m_ObjectHideFlags: 0
