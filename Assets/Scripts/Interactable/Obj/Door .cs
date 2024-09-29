@@ -9,5 +9,7 @@ public class Door : Interactable
 	public override void Interaction()
 	{
 		Debug.Log("Я открылся");
-	}
+		_animator.SetTrigger("Run");
+		AudioSource.PlayClipAtPoint(_clip,transform.position,0.3f);
+    }
 }

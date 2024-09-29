@@ -18,7 +18,7 @@ public class Altar : MonoBehaviour
 	}
 	public string GetVariableEnd()
 	{
-		if (_countArtefact == _max) return _win;
+		if (_countArtefact >= _max) return _win;
 		else return _lose;
 	}
 }

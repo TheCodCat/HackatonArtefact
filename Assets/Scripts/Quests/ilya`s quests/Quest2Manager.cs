@@ -20,7 +20,7 @@ public class Quest2Manager : Interactable
         }
         foreach (var item in _dors)
         {
-            item.gameObject.SetActive(false);
+            item.Interaction();
         }
     }
 }
