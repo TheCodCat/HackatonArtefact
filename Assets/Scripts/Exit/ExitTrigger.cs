@@ -14,6 +14,7 @@ public class ExitTrigger : MonoBehaviour
         {
             _stateMachin = component;
             _stateMachin.ChangeState(StatePlayer.UI);
+            Cursor.lockState = CursorLockMode.None;
             _eventSystem.SetSelectedGameObject(_exitController.ExitButton);
             _exitController.EnableExitPanel();
         }
@@ -22,5 +23,6 @@ public class ExitTrigger : MonoBehaviour
     {
         _exitController.DisableExitPanel();
         _stateMachin.ChangeState(StatePlayer.Game);
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }
