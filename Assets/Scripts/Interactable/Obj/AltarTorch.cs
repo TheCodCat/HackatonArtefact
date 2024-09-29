@@ -14,8 +14,12 @@ public class AltarTorch : EmptyTorch
 			_isStart = false;
 		}
 	}
-	public Gradient Getcolor()
+	public Gradient GetGradient()
 	{
 		return _particleSystem.colorOverLifetime.color.gradient;
+	}
+	public Color GetColor()
+	{
+		return _light.color;
 	}
 }

@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class LightDoor : Interactable
 {
+	private const string RUN_KEY = "Run";
 	[SerializeField] private bool _isOpen;
-	[SerializeField] private GameObject _door;
+	[SerializeField] private Animator _door;
 	[SerializeField] private List<DoorTorch> _gradients;
 	[SerializeField] private ColorDoor _gradient;
 	[SerializeField] private int _countFire;
+	[SerializeField] private AudioClip _clip;
 	public void Interaction(DoorTorch doorTorch)
 	{
 		if (_isOpen) return;
@@ -28,7 +30,12 @@ public class LightDoor : Interactable
 				item.DisableLight();
 			}
 		}
-		else _door.SetActive(false);
+		else
+		{
+			AudioSource.PlayClipAtPoint(_clip,transform.position,0.3f);
+			_door.SetTrigger(RUN_KEY);
+
+        }
 		_gradients.Clear();
 
 	}

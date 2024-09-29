@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class GrapMotor : MonoBehaviour
 {
@@ -25,7 +26,8 @@ public class GrapMotor : MonoBehaviour
 				{
 					grap.Up();
 					_currentUp = grap;
-				}
+
+                }
 				else if (hitInfo.collider.TryGetComponent(out AltarPoint point))
 				{
 					if(_currentUp is not null)
